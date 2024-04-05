@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stop Watch Web Application | Sagar Malasi</title>
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="the mask favicon.jpg" type="image/x-icon">
 <body>
-    
+    <div class="container">
+        <div class="timer-display">
+            00 : 00: 00: 00
+        </div>
+        <ul class="laps"><li>00 : 00: 00: 00</li></ul>
+
+        <div class="action">
+            <button id="startTimer" onclick="start()">Start</button>
+            <button id="pauseTimer" onclick="pause()">Pause</button>
+            <button id="resetTimer" onclick="reset()">Reset</button>
+            <button id="restartTimer" onclick="restart()">Restart</button>
+            <button id="lap" onclick="lap()">Lap</button>
+            <button id="resetLap" onclick="resetLap()">Reset Laps</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
